@@ -22,3 +22,4 @@ for aluno in alunos:
        
         
 
+print(dados)
