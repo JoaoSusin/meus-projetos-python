@@ -3,6 +3,7 @@ partidas = ()
 todos_jogadores = []
 continuar = 'S'
 total_goals = 0
+resp = 0
 
 while continuar == 'S':
     gols = []
@@ -33,3 +34,18 @@ print('-' * 50)
 
 for pos, jogador in enumerate(todos_jogadores):
     print(f'{pos:<4}{jogador["Nome"]:<15}{str(jogador["gols"]):<15}{jogador["Total"]:<7}')
+#se a pessoa  digitar o numero de tal jogador, vou exibir os gols de tal jogador em cada partida 
+
+while resp != 999:
+    resp = int(input('Digite o codigo de qual jogador você deseja saber os dados (999 para sair):'))
+    if resp == 999:
+        print('saindo...')
+        break
+    elif resp < 0 or resp >= len(todos_jogadores):
+        print('Codigo inválido')
+    else:
+        jogador = todos_jogadores[resp]# isso pega o jogador que esta na ´posição da resposta e joga todos os dados dele pra dentro de jogador
+        print(f'Levantamento do jogador {jogador["Nome"]}:')
+        
+        for part , gols in enumerate(jogador["gols"]):
+            print(f'Na partida {part +1} o jogador fez {gols} gols')
