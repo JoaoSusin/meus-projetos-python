@@ -6,17 +6,17 @@
 #contador(2, 4, 5, 6)
 #contador(6, 3, 6, 9)
 
-#def dobra(lst):
-#    pos = 0
-#    while pos <len(lst): # enquanto a pos for menor que o numero de elementos na lista, a minha lista na pos em que estiver, seja 0,1,2 ele vai multiplicar o valor por 2
-#        lst[pos]*=2
-#        pos +=1 # como a pos começa em 0, 0 é o primeiro item da lista, depois com o pos+=1 ele vai aumento 1 para multiplicar todos os numeros que estão na lista 
+def dobra(lst):
+    pos = 0
+    while pos <len(lst): # enquanto a pos for menor que o numero de elementos na lista, a minha lista na pos em que estiver, seja 0,1,2 ele vai multiplicar o valor por 2
+       lst[pos]*=2
+    pos +=1 # como a pos começa em 0, 0 é o primeiro item da lista, depois com o pos+=1 ele vai aumento 1 para multiplicar todos os numeros que estão na lista 
         
 
 
-#valores = [7, 2, 6, 8]
-#dobra(valores)
-#print(valores)
+valores = [7, 2, 6, 8]
+dobra(valores)
+print(valores)
 
 def soma(* valores):# O asterisco faz com que eu possa adicionar varios valores a lista
     s = 0 # minha resposta finla começa recebendo 0
