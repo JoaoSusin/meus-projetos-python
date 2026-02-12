@@ -1,28 +1,21 @@
-import random
-lista = []
-def analisar(valor):
-    print(f' Os valores sorteados foram {lista}')
+from  random import randint
+def sortear(lista):
+    for cont in range(0,5):
+        cont = randint(0,10)
+        numeros.append(cont)
 
-def soma(valor):
-    print(f'A soma dos numeros pares é {par}')
+def somapar(numpar):
+    par = 0
+    for n in numeros:
+        if n % 2 == 0:
+            par += n
+    print(par)        
+
+    
+    
 
 
-
-
-
-
-
-
-
-
-for n in range(5):
-   numero = random.randint(1,10)
-   lista.append(numero)
-   
-analisar(numero)
-
-par = 0
-if numero % 2 == 0:
-    par = par + numero
-
-soma(par)
+numeros = []
+sortear(numeros)
+print(numeros)
+somapar(numeros)
