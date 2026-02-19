@@ -14,5 +14,5 @@ def fatorial(numero, show):
     
     
     
-print(fatorial(5, show=False))
+print(fatorial(5, show=False))# show false mostra so o resultado final e show true mostra toda a conta 
 

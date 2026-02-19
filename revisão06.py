@@ -15,7 +15,7 @@
 ##########################################
 def somar(a,b,c):
     s = a+b+c
-    return s
+    return s # esse return s ta mandando o valor da soma pra dentro do r1,r2,r3, no caso ele nao escreve o result, so me manda ele pra variavel 
 
 
 r1 = somar(3,4,6)
